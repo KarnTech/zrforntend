@@ -6,6 +6,7 @@ import {useEffect, useState} from 'react'
 
 
 function App() {
+  const [data, setData] = useState(null);
 
 
   useEffect(async () => {
@@ -13,11 +14,12 @@ function App() {
       '/testfunction'
     );
  
-    console.log(result.json())
+    let res  =  await result.json()
+      setData(res)
   });
   return (
     <div className="App">
-      
+      {data.currentstatus}
     </div>
   );
 }
