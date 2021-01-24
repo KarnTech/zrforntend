@@ -1,7 +1,7 @@
 {
   "name": "zrfrontend",
   "version": "0.1.0",
-  "proxy": "https://us-central1-zonerecovery-c724f.cloudfunctions.net",
+  "proxy": "http://localhost:5001/zonerecovery-c724f/us-central1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
