@@ -15,18 +15,12 @@ function App() {
       return setData(res)
     }
     fetchdata()
+    console.log(data)
   }, [])
-
-
-  function playaudio(){
-    let audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/Yodel_Sound_Effect.mp3')
-
-    audio.play()
-  }
-
 
   return (
     <div className="App">
+      {data?.buyprice}
     </div>
   );
 }
